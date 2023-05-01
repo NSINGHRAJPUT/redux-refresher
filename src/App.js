@@ -17,7 +17,7 @@ function App() {
       body : JSON.stringify(cart),
     }).then(res=>{
       if(res.ok){
-        res.json().then(data=>alert('request successful'))
+        res.json().then(data=>console.log('request successful'))
       }else{
         res.json().then(data=>alert('request Failed'))
       }
